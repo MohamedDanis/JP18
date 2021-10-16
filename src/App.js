@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router,Route} from 'react-router-dom'
+import {useContext,useEffect} from 'react'
+import './App.css'
+import {AuthContext,FirebaseContext} from './contexts/FirebaseContext'
+import Teampage from './pages/user/Teampage'
+import Signup from './pages/admin/Signup';
+import Signin from './pages/admin/Signin';
+import AdminHome from './pages/admin/AdminHome';
 
 function App() {
+  const{user,setUser}=useContext(AuthContext)
+  const{firebase}=useContext(FirebaseContext)
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((user)=>{
+      setUser(user)
+    })
+  })
   return (
+    <Router>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Route exact path="/point-table">
+        <Teampage/>
+      </Route>
+      <Route path="/adminSignup">
+        <Signup/>
+      </Route>
+      <Route path="/adminSignin">
+       <Signin/>
+      </Route>
+      <Route path="/adminHome">
+        <AdminHome/>
+      </Route>
+     
     </div>
+    </Router>
   );
 }
 

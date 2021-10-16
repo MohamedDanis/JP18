@@ -1,0 +1,26 @@
+.logo-name-admin{
+    font-family: EvilEmpire;
+        color: #FFC11E;
+        letter-spacing: 0.3rem;
+        font-size: 3.8rem;
+        font-weight: lighter;
+        margin: 0;
+        
+}
+.nav-bar-admin{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar-admin::after{
+    content: " ";
+      width: 90%;
+      height: 5px;
+      background-color: #FFC11E;
+      position: absolute;
+      top: 5.75rem;
+      text-align: center;
+      margin: 0 5%;
+}

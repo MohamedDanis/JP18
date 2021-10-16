@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'EvilEmpire';
+  src: local("EvilEmpire"), url("../../assets/fonts/EvilEmpire.ttf") format("truetype");
+}
+
+.nav-list {
+  text-align: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+.user-nav {
+  width: 100%;
+  height: 6rem;
+  background-color: #37323E;
+  z-index: 2;
+}
+
+.user-nav .logo-name {
+  font-family: EvilEmpire;
+  color: #FFC11E;
+  letter-spacing: 0.3rem;
+  font-size: 3.8rem;
+  font-weight: lighter;
+  margin: 0;
+  margin-left: 2.3rem;
+}
+
+.user-nav .nav-bar {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-items {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.nav-items li {
+  list-style: none;
+  font-family: 'Nova Flat', cursive;
+  font-size: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.vertical-move {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.show {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  left: 0;
+  top: 5.75rem;
+  background: #FFC11E;
+}
+
+.hamburger {
+  margin-right: 2.3rem;
+}
+
+.bar {
+  width: 3.5rem;
+  height: 7.8px;
+  right: 1rem;
+  background: #FFC11E;
+  border-radius: 5px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.bar:nth-child(2) {
+  margin-top: 0.5rem;
+}
+
+.bar:nth-child(3) {
+  margin-top: 0.5rem;
+}
+
+.bar-none:nth-child(1) {
+  -webkit-transform: translateY(10px) rotate(135deg);
+          transform: translateY(10px) rotate(135deg);
+}
+
+.bar-none:nth-child(2) {
+  opacity: 0;
+}
+
+.bar-none:nth-child(3) {
+  -webkit-transform: translateY(-22px) rotate(-135deg);
+          transform: translateY(-22px) rotate(-135deg);
+}
+
+.nav-bar::after {
+  content: " ";
+  width: 90%;
+  height: 5px;
+  background-color: #FFC11E;
+  position: absolute;
+  top: 5.75rem;
+  text-align: center;
+  margin: 0 5%;
+}
+/*# sourceMappingURL=UserNavbar.css.map */

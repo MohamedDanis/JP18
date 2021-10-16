@@ -1,0 +1,73 @@
+.signup-wrapper{
+    position: absolute;
+    width: 86%;
+    height: 32rem;
+    left: 50%;
+    top: 24.75rem;
+   
+    transform: translate(-50%, -50%);
+    background: #FFC11E;
+    border-radius: 26px;
+}
+
+.signup-wrapper h1{
+    font-family: 'Jockey One', sans-serif;
+    color: #37323E;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+}
+.form-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    width: 450px;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+input{
+    font-family: 'Montserrat Alternates', sans-serif;
+    background: #fff;
+    border: 0;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    height: 2rem;
+    width: 15.9rem;
+    font-size: 1rem;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    outline: 0;
+    
+}
+label{
+    font-family: 'Nova Flat', cursive;
+    font-size: 1.25rem;
+    font-weight: bolder;
+}
+.signup-btn{
+    width: 16.5rem;
+    background: #37323E;
+    color: #FFC11E;
+    height: 2.4rem;
+    font-size: 1.3rem;
+    border: 0;
+    font-family: 'Nova Flat', cursive;
+    border-radius: 4px;
+}
+
+

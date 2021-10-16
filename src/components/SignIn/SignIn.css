@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
+.signin-wrapper{
+    position: absolute;
+    width: 86%;
+    height: 32rem;
+    left: 50%;
+    top: 24.75rem;
+   
+    transform: translate(-50%, -50%);
+    background: #FFC11E;
+    border-radius: 26px;
+}
+
+.signin-wrapper h1{
+    font-family: 'Jockey One', sans-serif;
+    color: #37323E;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    margin: 0;
+    margin-top: 1rem;
+}
+.or-part{
+    text-align: center;
+    margin-top: 3rem;
+}
+.or-part Link{
+    color: black;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: lighter;
+}

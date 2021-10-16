@@ -1,0 +1,111 @@
+@media only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Force table to not be like tables anymore */
+  /* table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  } */
+  .point-table, .point-table-head, .point-table-body, .point-table-th, .point-table-td, .point-table-tr{
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  /* thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; 
+  } */
+  thead .point-table-tr{
+    position: absolute;
+    top: -9999px;
+    left: -9999px; 
+  }
+
+  .heading {
+    border: 1px solid #000;
+    margin-top: 2rem;
+    width: 90%;
+    margin-left: 1.2rem;
+  }
+  tbody .point-table-tr{
+    margin: 0 5%;
+    margin-top: 2rem;
+  }
+  /* td {
+     Behave  like a "row" 
+    border: none;
+    border-bottom: 1px solid #000;
+    position: relative;
+    padding-left: 50%;
+    background: #ffc11e;
+    font-family: Rationale;
+    font-size: 1.5rem;
+    color: #37323e;
+    height: 2.2rem;
+  } */
+  .point-table-td{
+    border: none;
+    border-bottom: 1px solid #000;
+    position: relative;
+    padding-left: 50%;
+    background: #ffc11e;
+    font-family: Rationale;
+    font-size: 1.5rem;
+    color: #37323e;
+    height: 2.2rem;
+  }
+
+  /* td:before {
+     Now like a table header 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    background: #6d6a75;
+    height: 38px;
+    color: white;
+    border: 1px solid #000;
+  } */
+  .point-table-td::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    background: #6d6a75;
+    height: 2.31rem;
+    color: white;
+    border: 1px solid #000;
+  }
+  /*
+	Label the data
+	*/
+  .point-table-td:nth-of-type(1):before {
+    content: "Rank";
+  }
+  .point-table-td:nth-of-type(2):before {
+    content: "Team";
+  }
+  .point-table-td:nth-of-type(3):before {
+    content: "Chicken Dinner";
+  }
+  .point-table-td:nth-of-type(4):before {
+    content: "Position Point";
+  }
+  .point-table-td:nth-of-type(5):before {
+    content: "Kills";
+  }
+  .point-table-td:nth-of-type(6):before {
+    content: "Kill Point";
+  }
+  .point-table-td:nth-of-type(7):before {
+    content: "Total Point";
+  }
+}
